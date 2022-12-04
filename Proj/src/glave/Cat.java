@@ -29,7 +29,7 @@ public class Cat {
      System.out.println("Felix is hungry right now " + " Type on Console : 1 ");
 	   eatj = scan.nextInt();
 		if (eatj == 1) {
-			System.out.println("Felix say's Thenak's !");
+			System.out.println("Felix say's Thank's !");
 			if (eatj != 1) {
 				System.out.println("Felix is sad :( ");
 
