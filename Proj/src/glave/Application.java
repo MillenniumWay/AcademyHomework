@@ -10,6 +10,8 @@ public class Application {
 
 		cat.sleep();
 		
+		cat.walk();
+		
 	    cat.eat();
 	    
 	    cat.grow();

@@ -1,9 +1,12 @@
 package glave;
 
+import java.util.Scanner;
+
 public class Cat {
 	String name = "Felix";
 	int age = 12;
 	int walletMove = 150;
+	Scanner scan = new Scanner(System.in);
 
 	public void nameAge() {
 		System.out.println("Name of cat : " + name + " | Age : " + age);
@@ -15,14 +18,24 @@ public class Cat {
 			if (age < 17) {
 			}
 			age++;
-			System.out.println(" Felix grow ! : " + age + " (After one year) ");
+			System.out.println(" Felix grow !" + " He is : "+ age + " Years " +" (After one year) ");
 
 		} while (age < 13);
 
 	}
 
 	public void eat() {
-		System.out.println("Felix is hungry right now");
+	int eatj;	
+     System.out.println("Felix is hungry right now " + " Type on Console : 1 ");
+	   eatj = scan.nextInt();
+		if (eatj == 1) {
+			System.out.println("Felix say's Thenak's !");
+			if (eatj != 1) {
+				System.out.println("Felix is sad :( ");
+
+			}
+
+		}
 	}
 
 	public void sleep() {
@@ -35,7 +48,10 @@ public class Cat {
 			wallet = wallet + walletMove;
 			System.out.println("In Felix's Wallet : " + wallet + "$ Dollars");
 		}
+	}
 
+	public void walk() {
+		System.out.println(name + "is walk to School :з");
 	}
 
 }
